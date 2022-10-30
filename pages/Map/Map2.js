@@ -1,11 +1,13 @@
 import * as React from "react";
 import { useRef, useState, useEffect } from "react";
 import mapboxgl from "mapbox-gl";
-import * as MapboxCircle from "mapbox-gl-circle";
 import { insideCircle, distanceTo } from "geolocation-utils";
 import ActiveMintsNavbar from "../../components/Navbars/ActiveMintsNavbar";
 import Drawer2 from "../../components/Drawer/Drawer2";
-
+import dynamic from "next/dynamic";
+const MapboxCircle = dynamic(() => import("mapbox-gl-circle"), {
+  ssr: false,
+});
 mapboxgl.accessToken =
   "pk.eyJ1Ijoic2hyZXlhc2gxNSIsImEiOiJjbDY0MGx6d3cwZHFkM3FwZ3Mwb2htMGZoIn0.0BtzRvleOZQpq9EiZbBU_A";
 
@@ -25,6 +27,12 @@ function Map2() {
       center: [lng, lat],
       zoom: zoom,
       maxZoom: 11.8,
+    });
+    if (!map.current) return; // wait for map to initialize
+    map.current.on("move", () => {
+      setLng(map.current.getCenter().lng.toFixed(4));
+      setLat(map.current.getCenter().lat.toFixed(4));
+      setZoom(map.current.getZoom().toFixed(2));
     });
 
     var geolocate = new mapboxgl.GeolocateControl({
@@ -152,15 +160,6 @@ function Map2() {
         }
       });
     }
-  });
-
-  useEffect(() => {
-    if (!map.current) return; // wait for map to initialize
-    map.current.on("move", () => {
-      setLng(map.current.getCenter().lng.toFixed(4));
-      setLat(map.current.getCenter().lat.toFixed(4));
-      setZoom(map.current.getZoom().toFixed(2));
-    });
   });
 
   return (
