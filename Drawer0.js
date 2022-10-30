@@ -38,7 +38,7 @@ const Drawer0 = (props) => {
           (position) => {
             dist = headingDistanceTo(
               { lat: position.coords.latitude, lng: position.coords.longitude },
-              { lat: 39.95574080555556, lng: -75.21315336111111 }
+              { lat: 39.9542255, lng: -75.1547403 }
             );
           },
           (error) => {
