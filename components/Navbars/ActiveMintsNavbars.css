@@ -1,0 +1,29 @@
+.nav1 {
+  height: 40px;
+  width: 100%;
+  padding-top: 15px;
+  background-color: black;
+  position: relative;
+  border-bottom: 2px solid white;
+}
+
+.nav1 > .nav-header1 {
+  display: inline;
+}
+
+.nav1 > .nav-header1 > .nav-title1 {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 0px 0px 0px 10px;
+}
+
+.nav1 > .nav-header1 > .nav-title1 > .btn-back1 {
+  color: white;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}

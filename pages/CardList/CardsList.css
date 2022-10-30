@@ -1,0 +1,53 @@
+.card-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  color: white;
+  padding: 24px;
+}
+
+.recent-work {
+  display: flex;
+  padding: 10px;
+  border-radius: 13px;
+  margin: auto;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.11);
+}
+
+.recent-work .pic {
+  flex-shrink: 0;
+  flex-basis: 40%;
+  padding-right: 2px;
+  padding-left: 8px;
+  padding-top: 5px;
+}
+
+.pic img {
+  display: block;
+  width: 90%;
+  height: 90%;
+}
+
+img {
+  clip-path: polygon(50% 1%, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  color: white;
+}
+.grid-item {
+  padding-left: 30px;
+  padding-bottom: 17px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.recent-work .grid-container .grid-item .to-map {
+  width: 100px;
+  height: 30px;
+  background-color: white;
+  color: black;
+}

@@ -1,0 +1,43 @@
+.product {
+  color: white;
+  padding: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.fancy {
+  text-align: center;
+  color: white;
+  padding: 15px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.fancy h3 {
+  display: inline-block;
+  position: relative;
+}
+.fancy h3:before,
+.fancy h3:after {
+  content: "";
+  position: absolute;
+  height: 11px;
+  border-bottom: 3px solid white;
+  top: 0;
+  width: 20px;
+}
+.fancy h3:before {
+  right: 100%;
+  margin-right: 10px;
+}
+.fancy h3:after {
+  left: 100%;
+  margin-left: 10px;
+}

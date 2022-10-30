@@ -1,0 +1,19 @@
+{
+  "name": "proto 06",
+  "description": "Collection of 10 numbers on the blockchain. This is the number 1/10.",
+  "image": "6.png",
+  "attributes": [
+    {
+      "trait_type": "Number",
+      "value": "6"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "6.png",
+        "type": "image/png"
+      }
+    ]
+  }
+}
