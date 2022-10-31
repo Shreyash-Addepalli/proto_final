@@ -25,7 +25,7 @@ const Drawer0 = (props) => {
       new PhantomWalletAdapter(),
       new SolflareWalletAdapter(),
       new TorusWalletAdapter(),
-      new CoinbaseWalletAdapter()
+      new CoinbaseWalletAdapter(),
       new BraveWalletAdapter()
     ],
     [network]
