@@ -157,13 +157,14 @@ const Drawer0 = (props) => {
           </div>
           <div>
             {`${Math.floor(dist?.distance)}` < 14000000 ? (
-              <ConnectionProvider endpoint={endpoint}>
-                <WalletProvider wallets={wallets} autoConnect>
-                  <WalletModalProvider>
-                    <Home />
-                  </WalletModalProvider>
-                </WalletProvider>
-              </ConnectionProvider>
+              <button
+                className="candymachine"
+                onClick={() => {
+                  window.open("https://sage-daifuku-5057eb.netlify.app/");
+                }}
+              >
+                Connect Wallet
+              </button>
             ) : null}
           </div>
         </div>
