@@ -23,7 +23,7 @@ const Drawer0 = (props) => {
   const wallets = useMemo(
     () => [
       new PhantomWalletAdapter(),
-      new SolflareWalletAdapter(),
+      new SolflareWalletAdapter({network}),
       new TorusWalletAdapter(),
       new CoinbaseWalletAdapter(),
       new BraveWalletAdapter()
