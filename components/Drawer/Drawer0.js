@@ -5,7 +5,7 @@ import { useMemo } from "react";
 import { clusterApiUrl } from "@solana/web3.js";
 import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
 import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
-import {CoinbaseWalletAdapter,BraveWalletAdapter, SolflareWalletAdapter,
+import {CoinbaseWalletAdapter,BraveWalletAdapter,
   PhantomWalletAdapter,
   SolflareWalletAdapter,
   TorusWalletAdapter,
@@ -26,8 +26,7 @@ const Drawer0 = (props) => {
       new SolflareWalletAdapter(),
       new TorusWalletAdapter(),
       new CoinbaseWalletAdapter(),
-      new BraveWalletAdapter(),
-      new SolflareWalletAdapter()
+      new BraveWalletAdapter()
     ],
     [network]
   );
