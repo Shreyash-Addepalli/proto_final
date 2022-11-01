@@ -68,7 +68,7 @@ const Drawer0 = (props) => {
         className={`wrapper ${
           wrapperClicked === false ? "slide-down" : "slide-up"
         } ${
-          `${Math.floor(dist?.distance)}` < 10000
+          `${Math.floor(dist?.distance)}` < 14000000
             ? "value-present"
             : "value-absent"
         } `}
@@ -97,13 +97,13 @@ const Drawer0 = (props) => {
                 className={`distance-from-mint ${
                   wrapperClicked === false ? "slide-down" : "slide-up"
                 } ${
-                  `${Math.floor(dist?.distance)}` < 10000
+                  `${Math.floor(dist?.distance)}` < 14000000
                     ? "value-present"
                     : "value-absent"
                 }`}
               >
                 <div>
-                  {`${Math.floor(dist?.distance)}` < 10000 ? (
+                  {`${Math.floor(dist?.distance)}` < 14000000 ? (
                     wrapperClicked === false ? (
                       <span>Click Here to Mint</span>
                     ) : (
@@ -156,7 +156,7 @@ const Drawer0 = (props) => {
             </div> */}
           </div>
           <div>
-            {`${Math.floor(dist?.distance)}` ? (
+            {`${Math.floor(dist?.distance)}` < 14000000 ? (
               <ConnectionProvider endpoint={endpoint}>
                 <WalletProvider wallets={wallets} autoConnect>
                   <WalletModalProvider>
