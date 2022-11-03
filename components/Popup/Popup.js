@@ -22,7 +22,7 @@ const Popup = (props) => {
                 textAlign: "center",
                 background: `#101010`,
                 fontSize: `30px`,
-                paddingTop: `30px`,
+                paddingTop: `10px`,
               }}
             >
               proto
@@ -34,8 +34,8 @@ const Popup = (props) => {
                 paddingLeft: `25px`,
                 paddingRight: `25px`,
                 fontSize: `20px`,
-                paddingTop: `10px`,
-                paddingBottom: `10px`,
+                paddingTop: `5px`,
+                paddingBottom: `5px`,
               }}
             >
               This project is an experimental beta. Please enter at your own
@@ -46,6 +46,8 @@ const Popup = (props) => {
                 textAlign: "center",
                 background: `#101010`,
                 paddingTop: `25px`,
+                     paddingTop: `3px`,
+                paddingBottom: `5px`,
               }}
             >
               <button
